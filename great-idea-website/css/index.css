@@ -50,7 +50,6 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-
 }
 
 html, body {
@@ -73,21 +72,40 @@ body {
 }
 
 nav a {
-	margin-right: 8%;
+	display: inline-block;
 	text-decoration: none;
-	color: lightgrey;
+	margin: auto;
+	color: white;
 }
 
 .nav-container {
 	display: inline-block;
-	width: 60%;
-	margin-top: 1%;
 	vertical-align: top;
+	width: 70.4%;
+	border: 1px solid black;
+	background-color: #808080;
+	position: fixed;
+	top: 30px;
+}
+
+.nav-container li {
+	display: inline-block;
+	padding: 1% 6%;
+	margin: 0;
+	border: 1px solid black;
+}
+
+.nav-container li:hover{
+	background-color: #778899;
+}
+
+.nav-container a:hover {
+	color: black;
 }
 
 header img {
 	display: inline-block;
-	margin-left: 20%;
+	margin-left: 85%;
 	margin-right: 0;
 }
 
@@ -124,10 +142,53 @@ h1 {
 
 .CTA img {
 	margin: 5% 0;
+	height: 80%;
 }
 
 
+/*Features and About Section*/
+
+#features, #about {
+	display: inline-block;
+	width: 48%;
+	margin-top: 5%;
+}
+
+#features {
+	margin-right: 2%;
+}
 
 
+.middle-img {
+	display: block;
+	margin: 3% auto;
+	width: 100%;
+	border: 5px solid black;
+}
 
+.col-1-3 {
+	display: inline-block;
+	width: 32%;
+	margin-bottom: 5%;
 
+}
+
+.bottom-row {
+	border-bottom: 1px solid black;
+	margin-right: 1%;
+}
+
+/* Footer section */
+
+footer h2 {
+	margin-top: 5%;
+}
+
+address ul :nth-child(3){
+	margin: 2% 0;
+}
+
+footer p {
+	text-align: center;
+	margin: 5% auto;
+}
